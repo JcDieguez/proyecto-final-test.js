@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Mis gastos</h1>
+    <form id="tipoFormulario">
+        <div class="tablamenu">
+            Tipo de transaccion
+            <input id="ingreso" type="radio" name="tipoSelector" value="Ingreso" checked>
+            <label for="ingreso">Ingreso</label>
+
+            <input id="egreso" type="radio" name="tipoSelector" value="Egreso">
+            <label for="egreso">Egreso</label>
+
+        </div>
+
+        <div class="tablamenu">
+            <label for="tipoDescripcion">Descripcion</label>
+            <input id="tipoDescripcion" name="tipoDescripcion">
+        </div>
+
+        <div class="tablamenu">
+            <label for="tipoMonto">Monto</label>
+            <input id="tipoMonto" type="number" name="tipoMonto">
+        </div>
+
+        <div class="tablamenu">
+            <label for="tipoCategoria">Categoria</label>
+            <input id="tipoCategoria" name="tipoCategoria">
+        </div>
+
+        <div>
+            <button class="agregarboton">Añadir</button>
+        </div>
+    </form>
+
+    <div class="tablalista">
+        <table id="tipoTabla">
+            <tr>
+
+                <th>
+                    Tipo
+                </th>
+                <th>
+                    Descripcion
+                </th>
+                <th>
+                    Monto
+                </th>
+                <th>
+                    Categoria
+                </th>
+                <th>
+                    Eliminar
+                </th>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

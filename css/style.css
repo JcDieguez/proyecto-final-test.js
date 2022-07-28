@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    background-color: #1f0b03;
+    color: white;
+}
+
+
+
+#tipoFormulario{
+    text-align: center;
+}
+
+.agregarboton{
+    padding:10px;
+    background:#0ecf08;
+    color:white;
+    width:150px;
+    text-align:center;
+}
+
+.tablamenu{
+    background-color: rgb(155, 155, 155);
+    padding-bottom: 20px;
+}
+
+td, th{
+    text-align: center;
+    padding: 10px;
+    border: solid red 1px;
+}
+
+.tablalista table{
+    margin: 10px auto;
+
+}
