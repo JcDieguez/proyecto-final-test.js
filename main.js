@@ -7,6 +7,16 @@ form.addEventListener("submit", function (event) {
     guardarObj(convertirObj)
     insertarEnTipoTabla(convertirObj)
     form.reset();
+
+
+    // Estilo de alerta - Boton Agregar 
+    Toastify({
+        text: "Agregaste un articulo",
+        className: "info",
+        style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+        }
+    }).showToast();
 })
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -61,9 +71,18 @@ function insertarEnTipoTabla(convertirObj) {
 
     deleteButton.addEventListener("click", (event) => {
         let transactionRow = event.target.parentNode.parentNode;
-        let transactionID =  newTipoRow.getAttribute("transactionID", convertirObj["transactionID"]);
+        let transactionID = newTipoRow.getAttribute("transactionID", convertirObj["transactionID"]);
         transactionRow.remove();
         deleteconvertirObj();
+
+        // Estilo de alerta - Boton Eliminar
+        Toastify({
+            text: "Eliminaste un articulo",
+            className: "info",
+            style: {
+                background: "linear-gradient(to right, #FF2D00, #B53D23)",
+            }
+        }).showToast();
     }
     )
 }
@@ -93,3 +112,4 @@ function guardarObj(convertirObj) {
     localStorage.setItem("transactionData", convertirObjJson)
 
 }
+
