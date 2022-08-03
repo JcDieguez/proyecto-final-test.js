@@ -1,10 +1,14 @@
-h1{
-    text-align: center;
-    background-color: #1f0b03;
-    color: white;
+body{
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
+
+h1{
+    text-align: center;
+    color: white;
+}
 
 #tipoFormulario{
     text-align: center;
@@ -16,20 +20,41 @@ h1{
     color:white;
     width:150px;
     text-align:center;
+    
 }
 
 .tablamenu{
-    background-color: rgb(155, 155, 155);
+    background-color: rgb(73, 32, 32);
     padding-bottom: 20px;
+    color: white;
+    font-size: 22px;
 }
 
 td, th{
     text-align: center;
-    padding: 10px;
-    border: solid red 1px;
+    padding: 20px;
+    border: solid rgb(0, 0, 0) 1px;
 }
 
 .tablalista table{
-    margin: 10px auto;
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+.tablalista2{
+    background-color: #246355;
+    border-bottom: solid 5px #0f362d;
+    color: white;
+}
+
+tr:hover td{
+    background-color: #369681;
+    color: white;
+}
+
+#tipoTabla{
+    margin: 150px auto;
+    width: 600px;
 }
