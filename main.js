@@ -113,3 +113,28 @@ function guardarObj(convertirObj) {
 
 }
 
+
+
+// Armo una api del valor del dolar 
+fetch("https://api.bluelytics.com.ar/v2/latest")
+
+    .then(response => response.json())
+    .then(data => {
+
+
+        let element = document.getElementById('elem')
+        element.innerHTML =
+                            `<h3>DOLAR OFICIAL</h4>
+                            <p>Compra: ${data.oficial.value_buy}</p>
+                            <p>Venta: ${data.oficial.value_sell}</p>
+                            <h3>DOLAR BLUE</h3>
+                            <p>Compra: ${data.blue.value_buy}</p>
+                            <p>Venta: ${data.blue.value_sell}</p>
+                            <p>Actualizado: ${data.last_update}</p>`
+
+
+
+//todos los datos que trae mi api console.log(data)
+    })
+
+    .catch(err => console.log(err))
